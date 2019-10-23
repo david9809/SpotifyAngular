@@ -9,6 +9,8 @@ import { ArtistComponent } from './components/artist/artist.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -21,6 +23,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot( ROUTES, { useHash: true } )
   ],
   providers: [],

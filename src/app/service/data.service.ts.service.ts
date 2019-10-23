@@ -11,7 +11,7 @@ export class DataService {
   }
 
   getCountry(){
-    return this.http.get('https://restcountries.eu/rest/v2/lang/es');
+    return this.http.get('http://restcountries.eu/rest/v2/lang/es');
   }
 
 }

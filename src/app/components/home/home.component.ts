@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.dataService.getCountry().subscribe( data => {
         this.pais = data;
+        console.log(data)
     });
   }
 
